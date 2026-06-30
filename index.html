@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bullet Run | 2D 俯视角射击 | Vee Studio</title>
+<link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- 粒子背景 -->
+<canvas id="bgCanvas"></canvas>
+
+<!-- 导航 -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#">
+      <span class="nav-logo-text">BULLET RUN</span>
+    </a>
+    <div class="nav-links">
+      <a href="#modes">游戏模式</a>
+      <a href="#features">游戏特色</a>
+      <a href="#about">关于工作室</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <div class="hero-badge">Vee Studio 出品</div>
+    <h1 class="hero-title">
+      <span class="line">BULLET RUN</span>
+      <span class="line-en">2D TOP-DOWN SHOOTER</span>
+    </h1>
+    <p class="hero-subtitle">2D 俯视角硬核射击 · 联机对战 · 僵尸合作</p>
+
+    <div class="countdown" id="countdown">
+      <div class="cd-title">距离正式上线</div>
+      <div class="cd-boxes">
+        <div class="cd-box"><span id="days">00</span><label>天</label></div>
+        <div class="cd-box"><span id="hours">00</span><label>时</label></div>
+        <div class="cd-box"><span id="minutes">00</span><label>分</label></div>
+        <div class="cd-box"><span id="seconds">00</span><label>秒</label></div>
+      </div>
+      <div class="cd-date">2025.07.11</div>
+    </div>
+
+    <div class="hero-buttons" id="hero-buttons">
+      <a class="btn-primary" href="https://wwbbw.lanzouv.com/b019vyxpej" target="_blank" id="download-btn" style="display:none;">立即下载</a>
+      <a class="btn-ghost" href="#modes">了解游戏</a>
+    </div>
+
+    <div class="hero-platforms">
+      <span>Windows 端游</span>
+      <span class="sep">·</span>
+      <span>蓝奏云下载</span>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <div class="mouse"></div>
+  </div>
+</section>
+
+<!-- 游戏模式 -->
+<section class="modes" id="modes">
+  <div class="container">
+    <h2 class="section-title">三种模式，无限乐趣</h2>
+    <p class="section-subtitle">单人对战、生存合作、好友联机 — 总有一款适合你</p>
+
+    <div class="mode-cards">
+      <div class="mode-card">
+        <div class="mode-icon">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><circle cx="32" cy="32" r="26"/><path d="M32 6v52M6 32h52"/><circle cx="32" cy="32" r="6" fill="currentColor"/><circle cx="32" cy="32" r="3" fill="var(--bg-dark)"/></svg>
+        </div>
+        <h3>Bot 对战</h3>
+        <p>4 级难度 AI，8 名 Bot 同场竞技。击败 Bot 积攒人头，在人头商店升级装备。考验你的走位与枪法。</p>
+        <div class="mode-tag">单人</div>
+      </div>
+      <div class="mode-card accent">
+        <div class="mode-icon">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 52l24-40" stroke-linecap="round"/><circle cx="24" cy="22" r="6"/><circle cx="40" cy="22" r="6"/><circle cx="32" cy="40" r="6"/><path d="M12 44l8 8M44 52l8-8"/></svg>
+        </div>
+        <h3>僵尸合作</h3>
+        <p>无限波次生存，每 5 波出现精英，每 10 波遭遇 BOSS "幽灵"。波次间隙进入金钱商店，武装到牙齿迎战下一波。</p>
+        <div class="mode-tag">联机 / 单人</div>
+      </div>
+      <div class="mode-card">
+        <div class="mode-icon">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="14" width="48" height="36" rx="4"/><path d="M16 22h32M16 30h20M16 38h12"/><circle cx="48" cy="38" r="3" fill="currentColor"/></svg>
+        </div>
+        <h3>联机对战</h3>
+        <p>局域网 UDP 直连，三种联机模式：单挑 1v1（先达到 25 击杀的队伍获胜）、乱斗 3 人混战、僵尸合作 4 人小队。自由选色，房间内可随时切换模式，即刻开战。</p>
+        <div class="mode-tag">联机</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 特色功能 -->
+<section class="features" id="features">
+  <div class="container">
+    <h2 class="section-title">硬核射击体验</h2>
+    <p class="section-subtitle">纯代码绘制的画面，每一帧都是计算</p>
+
+    <div class="feature-grid">
+      <div class="feature-item">
+        <div class="feature-num">01</div>
+        <h3>武器系统</h3>
+        <p>手枪、步枪、狙击枪、近战刀，等等武器手感迥异。狙击枪半自动、精准一击；刀挥出冰蓝弧光，近战搏杀。</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">02</div>
+        <h3>智能 AI</h3>
+        <p>Bot 5 状态机（巡逻/追击/射击/掩体/撤退），会根据距离切换武器，会走位躲弹。僵尸 BOSS 还会投掷手雷。</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">03</div>
+        <h3>内置商店</h3>
+        <p>战斗中随时打开商店，购买弹药、医疗、伤害加成、无限子弹、甚至核弹清场。战场策略不止于枪法。</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">04</div>
+        <h3>观战系统</h3>
+        <p>死亡后不直接结束，切换为观战视角跟随队友继续战斗。直到全员阵亡，才宣判 GAME OVER。</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">05</div>
+        <h3>代码即美术</h3>
+        <p>所有武器、准星、UI、特效均由 GDScript 纯代码绘制生成，零外部图片资源。开发者主义的极致浪漫。</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">06</div>
+        <h3>联机对战系统</h3>
+        <p>局域网 UDP 直连，单挑 1v1 限制 25 击杀定胜负，乱斗 3 人混战，僵尸合作 4 人小队。房间内房主可自由切换模式，支持踢人、准备确认、自由选色，同宿舍开黑首选。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 关于我们 -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-text">
+        <h2 class="section-title">关于 Vee Studio</h2>
+
+        <div class="founder-line">
+          <img src="assets/qiudidia.jpg" alt="qiudidia" class="founder-inline-avatar">
+          <p>由创始人 <strong>qiudidia</strong> 创立的独立游戏工作室。</p>
+        </div>
+
+        <p>我们相信：最好的游戏画面，是代码画出来的。Bullet Run 的每一把枪、每一个 UI 图标、每一次挥刀的刀光，全部来自 GDScript 的实时绘制 — 没有 Photoshop，没有外部素材包，只有纯粹的代码与热爱。</p>
+        <p>Bullet Run 正式上线的时候，边代表我们工作室战胜了所有困难，7.11，等你来战。</p>
+
+        <img src="assets/qiudidia-signature.png" alt="签名" class="founder-signature">
+      </div>
+      <div class="about-right">
+        <!-- 右侧可放其他内容，暂时留空 -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <img src="assets/logo_dark.svg" alt="Bullet Run" class="footer-logo">
+      <div class="footer-links">
+        <a href="https://wwbbw.lanzouv.com/b019vyxpej" target="_blank">下载页面</a>
+        <a href="#">更新日志</a>
+        <a href="#">联系我们</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Vee Studio. 保留所有权利。</span>
+      <span>Godot Engine 4.6 驱动</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 下载弹窗 -->
+<div class="download-modal" id="download-modal">
+  <div class="modal-backdrop"></div>
+  <div class="modal-content">
+    <h2>游戏已上线</h2>
+    <p>Bullet Run 1.0 正式发布，点击下方按钮前往下载页面。</p>
+    <a class="btn-primary modal-btn" href="https://wwbbw.lanzouv.com/b019vyxpej" target="_blank">前往蓝奏云下载</a>
+    <div class="modal-password">
+      <span>提取密码</span>
+      <code id="pwd-box">h86r</code>
+      <button class="copy-btn" onclick="copyPwd()">复制</button>
+    </div>
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
