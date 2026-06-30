@@ -122,6 +122,31 @@ function copyPwd() {
   });
 }
 
+// 通用复制函数
+function copyText(text, btn) {
+  navigator.clipboard.writeText(text).then(() => {
+    if (btn) {
+      const oldText = btn.textContent;
+      btn.textContent = '已复制';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = oldText; btn.classList.remove('copied'); }, 2000);
+    }
+  }).catch(() => {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    if (btn) {
+      const oldText = btn.textContent;
+      btn.textContent = '已复制';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = oldText; btn.classList.remove('copied'); }, 2000);
+    }
+  });
+}
+
 // 导航栏滚动效果
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
