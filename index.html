@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bullet Run | 2D 视角射击 | Vee Studio</title>
+<title>Bullet Run | 2D 俯视角射击 | Vee Studio</title>
 <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
 <link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -36,7 +36,7 @@
       <span class="line">BULLET RUN</span>
       <span class="line-en">2D TOP-DOWN SHOOTER</span>
     </h1>
-    <p class="hero-subtitle">2D 视角硬核射击 · 联机对战 · 僵尸合作</p>
+    <p class="hero-subtitle">2D 俯视角硬核射击 · 16 级军衔 XP 系统 · 联机对战 · 僵尸合作</p>
 
     <div class="countdown" id="countdown">
       <div class="cd-title">距离正式上线</div>
@@ -85,7 +85,7 @@
           <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 52l24-40" stroke-linecap="round"/><circle cx="24" cy="22" r="6"/><circle cx="40" cy="22" r="6"/><circle cx="32" cy="40" r="6"/><path d="M12 44l8 8M44 52l8-8"/></svg>
         </div>
         <h3>僵尸合作</h3>
-        <p>无限波次生存，每 5 波出现精英，每 10 波遭遇 BOSS "幽灵"（还会扔手雷！）。波次间隙进入金钱商店，购买步枪、狙击枪、机枪武装到牙齿迎战下一波。</p>
+        <p>无限波次生存，每 5 波出现精英（500 血），每 10 波遭遇 BOSS「幽灵」（10000 血，还会扔手雷！）。击杀普通僵尸 +5 XP，精英 +35 XP，BOSS +75 XP。波次间隙进入金钱商店，购买步枪、狙击枪、机枪武装到牙齿迎战下一波。击杀奖励 XP 全队共享。</p>
         <div class="mode-tag">联机 / 单人</div>
       </div>
       <div class="mode-card">
@@ -107,10 +107,10 @@
     <p class="section-subtitle">纯代码绘制的画面，每一帧都是计算</p>
 
     <div class="feature-grid">
-      <div class="feature-item">
+        <div class="feature-item">
         <div class="feature-num">01</div>
         <h3>武器系统</h3>
-        <p>手枪、步枪、狙击枪、机枪、近战刀，手感迥异。狙击枪半自动、精准一击；机枪 100 发弹匣倾泻火力；刀挥出冰蓝弧光，近战搏杀。</p>
+        <p>手枪、步枪、狙击枪、刀、机枪，手感迥异。狙击枪半自动、精准一击；机枪 100 发弹匣倾泻火力；刀挥出冰蓝弧光，近战搏杀。开局仅手枪和 0 颗手雷，其余武器在商店购买解锁。</p>
       </div>
       <div class="feature-item">
         <div class="feature-num">02</div>
@@ -137,10 +137,15 @@
         <h3>代码即美术</h3>
         <p>所有武器、准星、UI、特效均由 GDScript 纯代码绘制生成，零外部图片资源。开发者主义的极致浪漫。</p>
       </div>
-      <div class="feature-item">
+        <div class="feature-item">
         <div class="feature-num">07</div>
         <h3>联机对战系统</h3>
-        <p>局域网 UDP 直连，单挑 1v1 限制 25 击杀定胜负，乱斗 3 人混战，僵尸合作 4 人小队。房间内房主可自由切换模式，支持踢人、准备确认、自由选色，同宿舍开黑首选。</p>
+        <p>局域网 UDP 直连，单挑 1v1 限制 25 击杀定胜负，乱斗 3 人混战，僵尸合作 4 人小队。房间内房主可自由切换模式，支持踢人、准备确认、自由选色，同宿舍开黑首选。联机僵尸合作击杀奖励 XP 全队共享！</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">08</div>
+        <h3>军衔与成长系统</h3>
+        <p>16 级军衔，从列兵到上将。击杀敌人积累 XP，XP 线性递增（Lv.1→2 需 100 XP，Lv.15→16 需 800 XP，满级共需 6750 XP）。每升一级解锁更强认同，军衔显示在你的主界面面板上。</p>
       </div>
     </div>
   </div>
@@ -158,7 +163,7 @@
           <p>由创始人 <strong>qiudidia</strong> 创立的独立游戏工作室。</p>
         </div>
 
-        <p>我们相信：最好的游戏画面，是代码画出来的。Bullet Run 的每一把枪、每一个 UI 图标、每一次挥刀的刀光，全部来自 GDScript 的实时绘制 — 没有 Photoshop，没有外部素材包，只有纯粹的代码与热爱。</p>
+        <p>我们相信：最好的游戏画面，是代码画出来的。Bullet Run 的每一把枪、每一个 UI 图标、每一次挥刀的刀光，全部来自 GDScript 的实时绘制 — 没有 Photoshop，没有外部素材包，只有纯粹的代码与热爱。游戏内置 16 级军衔成长系统、5 套装备配置与 8 大特长系统，乐趣不止于射击。</p>
         <p>Bullet Run 正式上线的时候，便代表我们工作室战胜了所有困难，7.11，等你来战。</p>
 
         <img src="assets/qiudidia-signature.png" alt="签名" class="founder-signature">
