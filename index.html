@@ -36,7 +36,7 @@
       <span class="line">BULLET RUN</span>
       <span class="line-en">2D TOP-DOWN SHOOTER</span>
     </h1>
-    <p class="hero-subtitle">2D 俯视角硬核射击 · 16 级军衔 XP 系统 · 联机对战 · 僵尸合作</p>
+    <p class="hero-subtitle">2D 俯视角硬核射击 · 16 级军衔 XP 系统 · 联机对战 · 僵尸合作 · 宝箱系统 · 自动更新</p>
 
     <div class="countdown" id="countdown">
       <div class="cd-title">距离正式上线</div>
@@ -85,7 +85,7 @@
           <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 52l24-40" stroke-linecap="round"/><circle cx="24" cy="22" r="6"/><circle cx="40" cy="22" r="6"/><circle cx="32" cy="40" r="6"/><path d="M12 44l8 8M44 52l8-8"/></svg>
         </div>
         <h3>僵尸合作</h3>
-        <p>无限波次生存，每 5 波出现精英（500 血），每 10 波遭遇 BOSS「幽灵」（10000 血，还会扔手雷！）。击杀普通僵尸 +5 XP，精英 +35 XP，BOSS +75 XP。波次间隙进入金钱商店，购买步枪、狙击枪、机枪武装到牙齿迎战下一波。击杀奖励 XP 全队共享。</p>
+        <p>无限波次生存，每 5 波出现精英（500 血），每 10 波遭遇 BOSS「幽灵」（10000 血，还会扔手雷！）。新增 3 种僵尸品种：速度型（快速冲刺）、坦克型（高血量重甲）、爆炸型（死亡时自爆范围伤害）。地图随机刷新金色宝箱，拾取获得 50-150 金钱。击杀普通僵尸 +5 XP，精英 +35 XP，BOSS +75 XP。波次间隙进入金钱商店，购买步枪、狙击枪、机枪武装到牙齿迎战下一波。击杀奖励 XP 全队共享。</p>
         <div class="mode-tag">联机 / 单人</div>
       </div>
       <div class="mode-card">
@@ -93,7 +93,7 @@
           <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="14" width="48" height="36" rx="4"/><path d="M16 22h32M16 30h20M16 38h12"/><circle cx="48" cy="38" r="3" fill="currentColor"/></svg>
         </div>
         <h3>联机对战</h3>
-        <p>局域网 UDP 直连，三种联机模式：单挑 1v1（先达到 25 击杀的队伍获胜）、乱斗 3 人混战、僵尸合作 4 人小队。自由选色，房间内可随时切换模式，即刻开战。</p>
+        <p>局域网 UDP 直连，三种联机模式：单挑 1v1（先达到 25 击杀的队伍获胜）、乱斗 3 人混战、僵尸合作 4 人小队。自由选色，房间内可随时切换模式，即刻开战。支持中途加入正在进行的游戏，玩家退出时全屏广播通知。</p>
         <div class="mode-tag">联机</div>
       </div>
     </div>
@@ -120,7 +120,7 @@
       <div class="feature-item">
         <div class="feature-num">03</div>
         <h3>智能 AI</h3>
-        <p>Bot 5 状态机（巡逻/追击/射击/掩体/撤退），会根据距离切换武器，会走位躲弹。僵尸 BOSS 还会投掷手雷。</p>
+        <p>Bot 5 状态机（巡逻/追击/射击/掩体/撤退），会根据距离切换武器，会走位躲弹。僵尸 BOSS 还会投掷手雷。3 种新僵尸品种各有独特行为模式。</p>
       </div>
       <div class="feature-item">
         <div class="feature-num">04</div>
@@ -129,23 +129,33 @@
       </div>
       <div class="feature-item">
         <div class="feature-num">05</div>
-        <h3>观战系统</h3>
-        <p>死亡后不直接结束，切换为观战视角跟随队友继续战斗。直到全员阵亡，才宣判 GAME OVER。</p>
+        <h3>宝箱系统</h3>
+        <p>地图随机刷新金色宝箱，拾取获得 50-150 金钱奖励。宝箱被拾取后 20-40 秒重新生成，联机模式下房主统一管理宝箱生成与同步。</p>
       </div>
       <div class="feature-item">
         <div class="feature-num">06</div>
+        <h3>观战系统</h3>
+        <p>死亡后不直接结束，切换为观战视角跟随队友继续战斗。空格切换队友，直到全员阵亡才宣判 GAME OVER。</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">07</div>
         <h3>代码即美术</h3>
         <p>所有武器、准星、UI、特效均由 GDScript 纯代码绘制生成，零外部图片资源。开发者主义的极致浪漫。</p>
       </div>
         <div class="feature-item">
-        <div class="feature-num">07</div>
+        <div class="feature-num">08</div>
         <h3>联机对战系统</h3>
-        <p>局域网 UDP 直连，单挑 1v1 限制 25 击杀定胜负，乱斗 3 人混战，僵尸合作 4 人小队。房间内房主可自由切换模式，支持踢人、准备确认、自由选色，同宿舍开黑首选。联机僵尸合作击杀奖励 XP 全队共享！</p>
+        <p>局域网 UDP 直连，单挑 1v1 限制 25 击杀定胜负，乱斗 3 人混战，僵尸合作 4 人小队。房间内房主可自由切换模式，支持踢人、准备确认、自由选色。支持中途加入正在进行的游戏，玩家退出时全屏广播通知。联机僵尸合作击杀奖励 XP 全队共享！</p>
       </div>
       <div class="feature-item">
-        <div class="feature-num">08</div>
+        <div class="feature-num">09</div>
         <h3>军衔与成长系统</h3>
         <p>16 级军衔，从列兵到上将。击杀敌人积累 XP，XP 线性递增（Lv.1→2 需 100 XP，Lv.15→16 需 800 XP，满级共需 6750 XP）。每升一级解锁更强认同，军衔显示在你的主界面面板上。</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">10</div>
+        <h3>自动更新</h3>
+        <p>游戏启动时自动检查 GitHub 最新版本，发现新版本弹出更新提示，一键跳转下载页面。无需手动检查，始终保持最新版本。</p>
       </div>
     </div>
   </div>
