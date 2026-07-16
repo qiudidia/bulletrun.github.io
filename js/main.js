@@ -44,8 +44,8 @@ function animate() {
 }
 animate();
 
-// 倒计时与下载弹窗 — 目标：2026年7月11日
-const targetDate = new Date('2026-07-11T00:00:00+08:00');
+// 倒计时与下载弹窗 — 目标：2026年7月30日
+const targetDate = new Date(2026, 6, 30, 0, 0, 0);
 let downloadShown = false;
 
 function updateCountdown() {
