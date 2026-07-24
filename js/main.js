@@ -162,11 +162,11 @@ const newsData = [
   {
     id: 1,
     title: 'bullet run正式版1.0即将上线！',
-    date: '2026-07-24',
+    date: '2026-07-21',
     tag: '公告',
     tagColor: '#ffc93c',
     summary: '我们很高兴地宣布，Bullet Run 的正式版发布将于本周六正式开启！抢先游玩玩家将获得独家测试奖励。',
-    fullContent: '我们很高兴地宣布，Bullet Run 的正式版发布将于本周六正式开启！\n\n**测试时间：**\n'
+    fullContent: '我们很高兴地宣布，Bullet Run 的正式版发布将于7.30正式开启！\n\n**测试时间：**\n'
   },
   {
     id: 2,
@@ -174,8 +174,8 @@ const newsData = [
     date: '2026-07-24',
     tag: '透露（重要）',
     tagColor: '#ff7b54',
-    summary: '欢迎来到Vee工作室，我将细说我们工作室的新作《SUPER POTATO》（简称SPx1）的开发计划和测试安排。',
-    fullContent: '说实话，我原本是想开发Bullet run的续作的，但是为了防止翻车，选择了开发新系列游戏。本游戏主抄土豆兄弟，素材 UI效果全面升级，不再选择使用代码编画角色了。\n\n**测试时间计划：**\n工作室准备在游戏联机模式开发完成后开启OPEN BETA公测试计划。\n\n**本地联机模式：**\n顺便透露一嘴，本地联机模式现在也开始开发了，你可以与同城的朋友一起快乐玩耍了！\n\n**测试详情：**\nOPEN BETA开始测试的时候我会通知并挂到官网上，测试时间为5天，反馈可以发在官方群或官网底下评论区。\n\n感谢各位的游玩！'
+    summary: '欢迎来到Vee工作室，我将细说我们工作室的新作《SUPER POTATO》（简称SPx1）的主要测试时间和更多细节',
+    fullContent: ''
   },
   {
     id: 3,
