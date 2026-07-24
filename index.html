@@ -20,6 +20,7 @@
       <span class="nav-logo-text">BULLET RUN</span>
     </a>
     <div class="nav-links">
+      <a href="#news">最新消息</a>
       <a href="#modes">游戏模式</a>
       <a href="#features">游戏特色</a>
       <a href="#about">关于工作室</a>
@@ -64,6 +65,15 @@
   </div>
   <div class="hero-scroll-hint">
     <div class="mouse"></div>
+  </div>
+</section>
+
+<!-- 新闻墙 -->
+<section class="news" id="news">
+  <div class="container">
+    <h2 class="section-title">最新消息</h2>
+    <p class="section-subtitle">游戏动态、更新公告、活动预告 — 第一时间掌握</p>
+    <div class="news-container" id="news-container"></div>
   </div>
 </section>
 
@@ -284,6 +294,15 @@
       <button class="copy-btn" onclick="copyPwd()">复制</button>
     </div>
     <button class="modal-close" onclick="closeModal()">&times;</button>
+  </div>
+</div>
+
+<!-- 新闻详情弹窗 -->
+<div class="news-modal" id="news-modal">
+  <div class="modal-backdrop" onclick="closeNewsModal()"></div>
+  <div class="news-modal-box">
+    <div id="news-modal-body"></div>
+    <button class="modal-close" onclick="closeNewsModal()">&times;</button>
   </div>
 </div>
 
